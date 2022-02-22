@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<body  align="center" style="background-color:grey;">
+<head>
+  <meta charset="UTF-8">
+  <title>Sentiment based Model Deployment</title>
+</head>
+
+<body>
+ <div class="login">
+	<h1 style="text-align:center">Sentiment based recommendation system</h1>
+
+    <form align="center" action="/predict" method="post">
+        
+        <p style="font-size:18px;">Enter user name: </p> 
+    	<input type="text" style="text-align:center" name="Username" placeholder="Username" required="required" />
+        <br>
+        <br>
+        <button align="center" type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+   <br>
+   <br>
+     {{ prediction_text_output }}
+
+ </div>
+
+
+</body>
+</html>
